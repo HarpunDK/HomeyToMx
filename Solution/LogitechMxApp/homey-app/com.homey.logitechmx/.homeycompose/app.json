@@ -32,5 +32,14 @@
   "author": {
     "name": "Kim Kokholm",
     "email": "kokholm@gmail.com"
+  },
+  "brandColor": "#00b8fc",
+  "homeyCommunityTopicId": 160286,
+  "contributors": {
+    "developers": [
+      {
+        "name": "Kim Kokholm"
+      }
+    ]
   }
 }
