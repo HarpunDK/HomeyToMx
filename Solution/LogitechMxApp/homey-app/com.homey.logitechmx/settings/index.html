@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/homey.js" data-origin="settings"></script>
+  <title>Logitech MX Keypad</title>
+</head>
+<body>
+  <header class="homey-header">
+    <h1 class="homey-title">Logitech MX Keypad</h1>
+    <p class="homey-subtitle">Use these connection details in the Logi Homey Actions plugin.</p>
+  </header>
+  <fieldset class="homey-form-fieldset">
+    <div class="homey-form-group">
+      <label class="homey-form-label" for="endpoint">Homey Pro endpoint</label>
+      <input class="homey-form-input" id="endpoint" type="text" readonly>
+    </div>
+    <div class="homey-form-group">
+      <label class="homey-form-label" for="integration-key">Integration key</label>
+      <input class="homey-form-input" id="integration-key" type="text" readonly>
+    </div>
+  </fieldset>
+  <script>
+    function onHomeyReady(Homey) {
+      document.getElementById('endpoint').value = 'http://homey.local/api/app/com.homey.logitechmx/button-press';
+      Homey.get('integrationKey', function (error, integrationKey) {
+        if (error) {
+          Homey.alert(error);
+          Homey.ready();
+          return;
+        }
+        document.getElementById('integration-key').value = integrationKey || '';
+        Homey.ready();
+      });
+    }
+  </script>
+</body>
+</html>

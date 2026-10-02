@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="outerBevel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.72" />
+      <stop offset="0.38" stop-color="#FFFFFF" stop-opacity="0.05" />
+      <stop offset="0.72" stop-color="#111111" stop-opacity="0.25" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.4" />
+    </linearGradient>
+    <linearGradient id="innerBevel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5" />
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.04" />
+      <stop offset="1" stop-color="#111111" stop-opacity="0.32" />
+    </linearGradient>
+  </defs>
+  <foreignObject x="0" y="0" width="256" height="256">
+    <xhtml:div style="width:256px;height:256px;border-radius:50%;background:conic-gradient(from 0deg,#FFE600 0deg,#B8EC00 30deg,#5ADD00 55deg,#00D978 90deg,#00D3D8 125deg,#0093ED 155deg,#3038DE 190deg,#7920B4 220deg,#D70CB9 250deg,#F91D5A 280deg,#FF4800 315deg,#FFC600 345deg,#FFE600 360deg);-webkit-mask:radial-gradient(circle at center,transparent 0 77px,#000 80px 125px,transparent 128px);mask:radial-gradient(circle at center,transparent 0 77px,#000 80px 125px,transparent 128px);"></xhtml:div>
+  </foreignObject>
+  <circle cx="128" cy="128" r="124" fill="none" stroke="url(#outerBevel)" stroke-width="3" />
+  <circle cx="128" cy="128" r="112" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2" />
+  <circle cx="128" cy="128" r="81" fill="none" stroke="url(#innerBevel)" stroke-width="3" />
+</svg>

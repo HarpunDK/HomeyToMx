@@ -1,0 +1,17 @@
+type: plugin4
+name: LogiHomeyActions
+version: 0.1.0
+displayName: Homey
+description: Trigger Homey Flows from MX Creative Keypad buttons
+author: Kim Kokholm
+license: MIT
+licenseUrl: https://opensource.org/licenses/MIT
+supportPageUrl: https://community.homey.app/t/pro-mx-keypad-logitech-mx-keypad/160286
+homePageUrl: https://github.com/HarpunDK/HomeyToMx
+minimumLoupedeckVersion: 6.1
+
+pluginType: remote
+pluginRuntime: nodejs
+entryPoint: index.mjs
+
+pluginCapabilities:

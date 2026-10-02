@@ -1,0 +1,4 @@
+{
+  "baseUrl": "http://homey.local",
+  "integrationKey": "replace-with-the-key-from-homey-settings"
+}

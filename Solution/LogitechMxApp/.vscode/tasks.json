@@ -1,0 +1,109 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Logitech MX Homey plugin",
+			"type": "shell",
+			"command": "npm.cmd --prefix logi-homey-actions install; if ($LASTEXITCODE -eq 0) { npm.cmd --prefix logi-homey-actions run build }",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build both integration apps",
+			"type": "shell",
+			"command": "npm.cmd --prefix logi-homey-actions run build; if ($LASTEXITCODE -eq 0) { & \"$env:APPDATA\\npm\\homey.cmd\" app build --path homey-app/com.homey.logitechmx }",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build Homey companion app",
+			"type": "shell",
+			"command": "Push-Location homey-app/com.homey.logitechmx; & \"$env:APPDATA\\npm\\homey.cmd\" app build; Pop-Location",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Package plugin and lint Homey app",
+			"type": "shell",
+			"command": "npm.cmd --prefix logi-homey-actions run build:pack; if ($LASTEXITCODE -eq 0) { Push-Location homey-app/com.homey.logitechmx; npm.cmd run lint; Pop-Location }",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$eslint - stylish"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Recheck plugin pack and Homey lint",
+			"type": "shell",
+			"command": "npm.cmd --prefix logi-homey-actions run build:pack; if ($LASTEXITCODE -eq 0) { Push-Location homey-app/com.homey.logitechmx; npm.cmd run lint -- --fix; Pop-Location }",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$eslint - stylish"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Recheck plugin pack and Homey lint",
+			"type": "shell",
+			"command": "npm.cmd --prefix logi-homey-actions run build:pack; if ($LASTEXITCODE -eq 0) { Push-Location homey-app/com.homey.logitechmx; npm.cmd run lint -- --fix; Pop-Location }",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$eslint - stylish"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Validate Homey app build",
+			"type": "shell",
+			"command": "Push-Location homey-app/com.homey.logitechmx; & \"$env:APPDATA\\npm\\homey.cmd\" app build; Pop-Location",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Show Homey TypeScript errors",
+			"type": "shell",
+			"command": "Push-Location homey-app/com.homey.logitechmx; npm.cmd run build; Pop-Location",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Rebuild Homey app after API fix",
+			"type": "shell",
+			"command": "Push-Location homey-app/com.homey.logitechmx; & \"$env:APPDATA\\npm\\homey.cmd\" app build; Pop-Location",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Final integration build checks",
+			"type": "shell",
+			"command": "npm.cmd --prefix logi-homey-actions run build:pack; if ($LASTEXITCODE -eq 0) { Push-Location homey-app/com.homey.logitechmx; npm.cmd run lint; if ($LASTEXITCODE -eq 0) { & \"$env:APPDATA\\npm\\homey.cmd\" app build }; Pop-Location }",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$eslint - stylish"
+			],
+			"group": "build"
+		}
+	]
+}
