@@ -9,7 +9,7 @@
 <body>
   <header class="homey-header">
     <h1 class="homey-title">Logitech MX Keypad</h1>
-    <p class="homey-subtitle">Use these connection details in the Logi Homey Actions plugin.</p>
+    <p class="homey-subtitle">Use these connection details in the Homey Keypad Bridge plugin for Logi Options+.</p>
   </header>
   <fieldset class="homey-form-fieldset">
     <div class="homey-form-group">
@@ -23,7 +23,7 @@
   </fieldset>
   <script>
     function onHomeyReady(Homey) {
-      document.getElementById('endpoint').value = 'http://homey.local/api/app/com.homey.logitechmx/button-press';
+      document.getElementById('endpoint').value = 'http://homey.local/api/app/com.logitech.mxkeypad/button-press';
       Homey.get('integrationKey', function (error, integrationKey) {
         if (error) {
           Homey.alert(error);

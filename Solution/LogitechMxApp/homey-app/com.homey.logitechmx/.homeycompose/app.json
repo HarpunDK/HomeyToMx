@@ -1,5 +1,5 @@
 {
-  "id": "com.homey.logitechmx",
+  "id": "com.logitech.mxkeypad",
   "version": "1.0.0",
   "compatibility": ">=12.4.0",
   "sdk": 3,
@@ -11,7 +11,7 @@
     "en": "Logitech MX Keypad"
   },
   "description": {
-    "en": "Connect Logitech MX Creative Keypad actions to Homey Flows"
+    "en": "Give every keypad press a place in your smart home."
   },
   "category": [
     "tools"
@@ -41,5 +41,6 @@
         "name": "Kim Kokholm"
       }
     ]
-  }
+  },
+  "source": "https://github.com/HarpunDK/HomeyToMx/tree/main/Solution/LogitechMxApp/logi-homey-actions"
 }

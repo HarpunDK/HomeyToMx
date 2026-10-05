@@ -1,6 +1,8 @@
-# Homey Actions
+# Homey Keypad Bridge
 
-This Logi Actions SDK plugin adds nine keypad actions, one for each MX Creative Keypad LCD key. Each action sends its key number to the Homey Pro app over the local network.
+Homey Keypad Bridge adds nine actions to Logi Options+, one for each MX Creative Keypad LCD key. Each action sends its key number to the Homey Pro app over the local network.
+
+This community-developed plugin is maintained by Kim Kokholm and is not an official Logitech plugin. Its source is available in the Homey app listing's Source link.
 
 ## Help
 
@@ -28,10 +30,10 @@ npm install
 npm run watch
 ```
 
-The plugin runs in Logi Plugin Service and appears in Logi Options+ when the service reloads it. To create a distributable package, run `npm run build:pack`.
+The plugin runs in Logi Plugin Service and appears in Logi Options+ as Homey Keypad Bridge when the service reloads it. To create a distributable package, run `npm run build:pack`.
 
 In watch mode, the terminal reports build and link status. Runtime messages are written by Logi Plugin Service. On Windows, follow them in PowerShell with:
 
 ```powershell
-Get-Content "$env:LOCALAPPDATA\Logi\LogiPluginService\Logs\plugin_logs\LogiHomeyActions.log" -Tail 20 -Wait
+Get-Content "$env:LOCALAPPDATA\Logi\LogiPluginService\Logs\plugin_logs\HomeyKeypadBridge.log" -Tail 20 -Wait
 ```

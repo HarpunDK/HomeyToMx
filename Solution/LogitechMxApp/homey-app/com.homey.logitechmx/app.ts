@@ -2,8 +2,8 @@ import Homey from 'homey';
 import { randomBytes, timingSafeEqual } from 'node:crypto';
 
 export type KeypadPressPayload = {
-  integrationKey: unknown;
-  buttonNumber: unknown;
+  integrationKey?: unknown;
+  buttonNumber?: unknown;
 };
 
 export default class LogitechMxApp extends Homey.App {

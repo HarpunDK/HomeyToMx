@@ -55,8 +55,8 @@ export async function getConfiguredBaseUrl(): Promise<string> {
 export async function sendButtonPress(buttonNumber: number): Promise<void> {
   try {
     const config = await loadConfig();
-    const endpoint = `${config.baseUrl}/api/app/com.homey.logitechmx/button-press`;
-    console.info(`[Logi Homey Actions] Sending key ${buttonNumber} to ${config.baseUrl}.`);
+    const endpoint = `${config.baseUrl}/api/app/com.logitech.mxkeypad/button-press`;
+    console.info(`[Homey Keypad Bridge] Sending key ${buttonNumber} to ${config.baseUrl}.`);
 
     const response = await fetch(endpoint, {
       method: 'POST',
@@ -69,10 +69,10 @@ export async function sendButtonPress(buttonNumber: number): Promise<void> {
       throw new Error(`Homey returned HTTP ${response.status}`);
     }
 
-    console.info(`[Logi Homey Actions] Homey accepted key ${buttonNumber} (HTTP ${response.status}).`);
+    console.info(`[Homey Keypad Bridge] Homey accepted key ${buttonNumber} (HTTP ${response.status}).`);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    console.error(`[Logi Homey Actions] Failed to send key ${buttonNumber}: ${message}`);
+    console.error(`[Homey Keypad Bridge] Failed to send key ${buttonNumber}: ${message}`);
     throw error;
   }
 }
