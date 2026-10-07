@@ -1,5 +1,5 @@
 {
-  "name": "logi-homey-actions",
+  "name": "homey-keypad-bridge",
   "version": "0.1.0",
   "description": "A plugin created with the Logi Plugin SDK",
   "type": "module",

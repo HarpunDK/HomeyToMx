@@ -1,5 +1,8 @@
 {
   "title": {
-    "en": "Trigger 9"
+    "en": "Key 9 pressed"
+  },
+  "hint": {
+    "en": "Triggered when key 9 on the MX Creative Keypad is pressed."
   }
 }

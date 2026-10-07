@@ -1,5 +1,5 @@
 {
-  "name": "com.homey.logitechmx",
+  "name": "com.logitech.mxkeypad",
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",

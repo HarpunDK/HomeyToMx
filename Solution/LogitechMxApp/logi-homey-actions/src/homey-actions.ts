@@ -15,7 +15,7 @@ export class HomeyButtonAction extends CommandAction {
   }
 
   async onKeyDown(): Promise<void> {
-    console.info(`[Logi Homey Actions] Keypad key ${this.buttonNumber} pressed.`);
+    console.info(`[Homey Keypad Bridge] Keypad key ${this.buttonNumber} pressed.`);
     await sendButtonPress(this.buttonNumber);
   }
 }

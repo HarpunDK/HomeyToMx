@@ -1,5 +1,5 @@
 type: plugin4
-name: LogiHomeyActions
+name: HomeyKeypadBridge
 version: 0.1.0
 displayName: Homey
 description: Trigger Homey Flows from MX Creative Keypad buttons

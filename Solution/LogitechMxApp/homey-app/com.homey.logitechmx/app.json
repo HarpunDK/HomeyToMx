@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
-  "id": "com.homey.logitechmx",
-  "version": "1.0.0",
+  "id": "com.logitech.mxkeypad",
+  "version": "1.0.1",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
@@ -12,7 +12,7 @@
     "en": "Logitech MX Keypad"
   },
   "description": {
-    "en": "Connect Logitech MX Creative Keypad actions to Homey Flows"
+    "en": "Give every keypad press a place in your smart home."
   },
   "category": [
     "tools"
@@ -43,60 +43,88 @@
       }
     ]
   },
+  "source": "https://github.com/HarpunDK/HomeyToMx/tree/main/Solution/LogitechMxApp/logi-homey-actions",
   "esm": true,
   "flow": {
     "triggers": [
       {
         "title": {
-          "en": "Trigger 1"
+          "en": "Key 1 pressed"
+        },
+        "hint": {
+          "en": "Triggered when key 1 on the MX Creative Keypad is pressed."
         },
         "id": "keypad_key_1_pressed"
       },
       {
         "title": {
-          "en": "Trigger 2"
+          "en": "Key 2 pressed"
+        },
+        "hint": {
+          "en": "Triggered when key 2 on the MX Creative Keypad is pressed."
         },
         "id": "keypad_key_2_pressed"
       },
       {
         "title": {
-          "en": "Trigger 3"
+          "en": "Key 3 pressed"
+        },
+        "hint": {
+          "en": "Triggered when key 3 on the MX Creative Keypad is pressed."
         },
         "id": "keypad_key_3_pressed"
       },
       {
         "title": {
-          "en": "Trigger 4"
+          "en": "Key 4 pressed"
+        },
+        "hint": {
+          "en": "Triggered when key 4 on the MX Creative Keypad is pressed."
         },
         "id": "keypad_key_4_pressed"
       },
       {
         "title": {
-          "en": "Trigger 5"
+          "en": "Key 5 pressed"
+        },
+        "hint": {
+          "en": "Triggered when key 5 on the MX Creative Keypad is pressed."
         },
         "id": "keypad_key_5_pressed"
       },
       {
         "title": {
-          "en": "Trigger 6"
+          "en": "Key 6 pressed"
+        },
+        "hint": {
+          "en": "Triggered when key 6 on the MX Creative Keypad is pressed."
         },
         "id": "keypad_key_6_pressed"
       },
       {
         "title": {
-          "en": "Trigger 7"
+          "en": "Key 7 pressed"
+        },
+        "hint": {
+          "en": "Triggered when key 7 on the MX Creative Keypad is pressed."
         },
         "id": "keypad_key_7_pressed"
       },
       {
         "title": {
-          "en": "Trigger 8"
+          "en": "Key 8 pressed"
+        },
+        "hint": {
+          "en": "Triggered when key 8 on the MX Creative Keypad is pressed."
         },
         "id": "keypad_key_8_pressed"
       },
       {
         "title": {
-          "en": "Trigger 9"
+          "en": "Key 9 pressed"
+        },
+        "hint": {
+          "en": "Triggered when key 9 on the MX Creative Keypad is pressed."
         },
         "id": "keypad_key_9_pressed"
       }

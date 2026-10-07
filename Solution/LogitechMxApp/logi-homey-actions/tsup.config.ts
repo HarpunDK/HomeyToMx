@@ -30,7 +30,7 @@ export default defineConfig({
 
     if (isWatchEnabled) {
       console.log('✅ Plugin linked. Press a keypad key to test it.');
-      console.log('📋 Runtime log: %LOCALAPPDATA%\\Logi\\LogiPluginService\\Logs\\plugin_logs\\LogiHomeyActions.log');
+      console.log('📋 Runtime log: %LOCALAPPDATA%\\Logi\\LogiPluginService\\Logs\\plugin_logs\\HomeyKeypadBridge.log');
       try {
         console.log(`🌐 Homey baseUrl: ${await getConfiguredBaseUrl()}`);
       } catch (error) {
